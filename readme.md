@@ -2,8 +2,6 @@
 
 A simple budgeting app for mobile devices.
 
-[![](https://www.herokucdn.com/deploy/button.svg)](https://www.heroku.com/deploy/?template=https://github.com/ozgrozer/budget)
-
 ## Deploying to Heroku
 
 1. Create a [MongoDB Atlas Cluster](https://www.mongodb.com/cloud)
