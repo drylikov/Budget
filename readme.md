@@ -1,6 +1,6 @@
-# budget
+# Budget
 
-A simple budgeting app for mobile devices
+A simple budgeting app for mobile devices.
 
 [![](https://www.herokucdn.com/deploy/button.svg)](https://www.heroku.com/deploy/?template=https://github.com/ozgrozer/budget)
 
@@ -28,11 +28,3 @@ A simple budgeting app for mobile devices
 - [ ] Delete categories
 - [ ] Add settings page
 - [x] Add statistics page
-
-## Contribution
-
-Feel free to contribute. Open a new [issue](https://github.com/ozgrozer/budget/issues), or make a [pull request](https://github.com/ozgrozer/budget/pulls).
-
-## License
-
-[MIT](license)
