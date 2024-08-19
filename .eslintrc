@@ -1,0 +1,6 @@
+{
+  "extends": ["standard", "standard-jsx"],
+  "rules": {
+    "react/jsx-fragments": 0
+  }
+}

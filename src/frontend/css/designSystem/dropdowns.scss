@@ -1,0 +1,62 @@
+fieldset:disabled {
+  .dropdown {
+    background-color: $gray2;
+  }
+}
+
+.dropdown {
+  position: relative;
+  &.open {
+    .dropdownMenu {
+      display: block;
+    }
+  }
+
+  .dropdownMenu {
+    left: 0;
+    top: 100%;
+    z-index: 2;
+    display: none;
+    padding: 8px 0;
+    min-width: 250px;
+    margin-top: 20px;
+    position: absolute;
+    background-color: #fff;
+    border: 1px solid $gray2;
+    border-radius: $borderRadius;
+    box-shadow: 0 16px 40px rgba(0, 0, 0, 0.12);
+    &.left {
+      left: 0;
+      right: auto;
+    }
+    &.right {
+      right: 0;
+      left: auto;
+    }
+
+    .dropdownItem {
+      width: 100%;
+      height: 50px;
+      display: block;
+      padding: 0 30px;
+      cursor: pointer;
+      text-align: left;
+      line-height: 50px;
+      user-select: none;
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      &:hover {
+        background-color: $gray1;
+      }
+      &.selected, &.active {
+        color: #fff;
+        background-color: $blue;
+      }
+
+      .icon {
+        margin-right: 6px;
+      }
+    }
+  }
+}

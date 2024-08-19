@@ -1,0 +1,133 @@
+.button {
+  color: #fff;
+  border: none;
+  height: 50px;
+  outline: none;
+  cursor: pointer;
+  padding: 0 24px;
+  line-height: 50px;
+  text-align: center;
+  display: inline-block;
+  border-radius: $borderRadius;
+  &:disabled, &.disabled {
+    color: $gray5;
+    cursor: default;
+    background-color: $gray2 !important;
+
+    .spinner1 {
+      margin-left: 5px;
+      display: inline-block;
+      @include spinner1($widthAndHeight: 12px, $border: 2px, $backColor: $gray5, $frontColor: $gray8);
+    }
+  }
+  &.small {
+    height: 30px;
+    padding: 0 12px;
+    font-size: 14px;
+    line-height: 30px;
+  }
+  &.block {
+    width: 100%;
+  }
+  &.indigo {
+    background-color: $indigo;
+    &:hover {
+      background-color: darken($indigo, $hoverDarkRatio);
+    }
+    &:active {
+      background-color: darken($indigo, $activeDarkRatio);
+    }
+  }
+  &.violet {
+    background-color: $violet;
+    &:hover {
+      background-color: darken($violet, $hoverDarkRatio);
+    }
+    &:active {
+      background-color: darken($violet, $activeDarkRatio);
+    }
+  }
+  &.purple {
+    background-color: $purple;
+    &:hover {
+      background-color: darken($purple, $hoverDarkRatio);
+    }
+    &:active {
+      background-color: darken($purple, $activeDarkRatio);
+    }
+  }
+  &.blue {
+    background-color: $blue;
+    &:hover {
+      background-color: darken($blue, $hoverDarkRatio);
+    }
+    &:active {
+      background-color: darken($blue, $activeDarkRatio);
+    }
+  }
+  &.green {
+    background-color: $green;
+    &:hover {
+      background-color: darken($green, $hoverDarkRatio);
+    }
+    &:active {
+      background-color: darken($green, $activeDarkRatio);
+    }
+  }
+  &.orange {
+    background-color: $orange;
+    &:hover {
+      background-color: darken($orange, $hoverDarkRatio);
+    }
+    &:active {
+      background-color: darken($orange, $activeDarkRatio);
+    }
+  }
+  &.red {
+    background-color: $red;
+    &:hover {
+      background-color: darken($red, $hoverDarkRatio);
+    }
+    &:active {
+      background-color: darken($red, $activeDarkRatio);
+    }
+  }
+  &.gray4 {
+    background-color: $gray4;
+    &:hover {
+      background-color: darken($gray4, $hoverDarkRatio);
+    }
+    &:active {
+      background-color: darken($gray4, $activeDarkRatio);
+    }
+  }
+  &.gray5 {
+    background-color: $gray5;
+    &:hover {
+      background-color: darken($gray5, $hoverDarkRatio);
+    }
+    &:active {
+      background-color: darken($gray5, $activeDarkRatio);
+    }
+  }
+  &.gray6 {
+    background-color: $gray6;
+    &:hover {
+      background-color: darken($gray6, $hoverDarkRatio);
+    }
+    &:active {
+      background-color: darken($gray6, $activeDarkRatio);
+    }
+  }
+  &.white {
+    color: $gray7;
+    background-color: $white;
+    border: 1px solid $gray3;
+    &:hover {
+      background-color: darken($white, $hoverDarkRatio);
+    }
+    &:active {
+      background-color: darken($white, $activeDarkRatio);
+    }
+  }
+}

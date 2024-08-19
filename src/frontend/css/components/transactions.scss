@@ -1,0 +1,60 @@
+#transactions {
+  .dayWrapper {
+    margin-top: 30px;
+    &:first-child {
+      margin-top: 0;
+    }
+
+    .daySection {
+      &:after {
+        content: '';
+        clear: both;
+        display: table;
+      }
+
+      .day {
+        float: left;
+        font-size: 24px;
+        line-height: 24px;
+      }
+
+      .balance {
+        float: right;
+        font-size: 12px;
+        margin-top: 2px;
+        padding: 6px 12px;
+        line-height: 12px;
+        background-color: $gray2;
+        border-radius: $borderRadius;
+      }
+    }
+
+    .transactions {
+      margin-top: 10px;
+
+      .transaction {
+        padding: 10px 0;
+        cursor: pointer;
+        &:after {
+          content: '';
+          clear: both;
+          display: table;
+        }
+
+        .transactionCategory {
+          float: left;
+        }
+
+        .transactionPrice {
+          float: right;
+          &.expense {
+            color: $red;
+          }
+          &.income {
+            color: $green;
+          }
+        }
+      }
+    }
+  }
+}

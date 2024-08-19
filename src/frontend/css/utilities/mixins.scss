@@ -1,0 +1,55 @@
+@mixin spinner1 ($widthAndHeight: 30px, $border: 6px, $backColor: $gray3, $frontColor: $black) {
+  $time: 400ms;
+  border-radius: 50%;
+  position: relative;
+  width: $widthAndHeight;
+  height: $widthAndHeight;
+  border: $border solid $backColor;
+  &:after {
+    content: '';
+    top: -$border;
+    left: -$border;
+    position: absolute;
+    border-radius: 50%;
+    width: $widthAndHeight;
+    height: $widthAndHeight;
+    border: $border solid transparent;
+    border-left-color: $frontColor;
+    border-bottom-color: $frontColor;
+    animation: spinner1 $time linear infinite;
+  }
+
+  @keyframes spinner1 {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+}
+
+@mixin aspectRatio ($ratio1, $ratio2) {
+  display: block;
+  position: relative;
+
+  &:before {
+    content: "";
+    display: block;
+    padding-bottom: ($ratio2 / $ratio1) * 100%;
+  }
+
+  >.arContent {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: absolute;
+    background-size: cover;
+    background-position: center center;
+  }
+}
+
+@mixin placeholder ($color) {
+  &::-webkit-input-placeholder { color: $color; }
+  &:-moz-placeholder { color: $color; }
+  &::-moz-placeholder { color: $color; }
+  &:-ms-input-placeholder { color: $color; }
+  &::-ms-input-placeholder { color: $color; }
+}

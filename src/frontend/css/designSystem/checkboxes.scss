@@ -1,0 +1,45 @@
+.checkbox {
+  cursor: pointer;
+  user-select: none;
+  position: relative;
+  display: inline-block;
+
+  input {
+    opacity: 0;
+    display: none;
+    cursor: pointer;
+    position: absolute;
+  }
+
+  input:checked ~ .checkmark:after {
+    display: block;
+  }
+
+  .checkmark {
+    width: 20px;
+    height: 20px;
+    vertical-align: top;
+    display: inline-block;
+    border: 1px solid $gray3;
+    border-radius: $borderRadius;
+    &:after {
+      width: 6px;
+      content: '';
+      height: 10px;
+      display: none;
+      position: absolute;
+      border-color: $blue;
+      border-style: solid;
+      transform: rotate(45deg);
+      border-width: 0 3px 3px 0;
+      top: (20px - (10px + 2px)) / 2;
+      left: (20px - (6px + 0px)) / 2;
+    }
+  }
+
+  .label {
+    line-height: 20px;
+    margin-left: 10px;
+    vertical-align: top;
+  }
+}

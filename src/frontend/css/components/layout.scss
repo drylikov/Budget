@@ -1,0 +1,55 @@
+$headerHeight: 80px;
+$footerHeight: 80px;
+$mainHeight: calc(100% - #{$headerHeight} - #{$footerHeight});
+
+header {
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+  font-size: 30px;
+  position: fixed;
+  line-height: 30px;
+  height: $headerHeight;
+  padding-left: $padding1;
+  padding-right: $padding1;
+  background-color: $gray1;
+  border-bottom: 1px solid $gray3;
+  padding-top: ($headerHeight - 30px) / 2;
+}
+
+main {
+  width: 100%;
+  overflow: auto;
+  padding: $padding1;
+  position: absolute;
+  top: $headerHeight;
+  height: $mainHeight;
+  background-color: $white;
+}
+
+footer {
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+  position: fixed;
+  height: $footerHeight;
+  background-color: $gray1;
+  border-top: 1px solid $gray3;
+  top: calc(#{$headerHeight} + #{$mainHeight});
+
+  .footerButton {
+    float: left;
+    font-size: 40px;
+    cursor: pointer;
+    padding-top: 10px;
+    line-height: 20px;
+    text-align: center;
+    height: $footerHeight;
+    width: calc(100% / 3);
+    &.active {
+      color: $green;
+    }
+  }
+}

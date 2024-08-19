@@ -1,0 +1,35 @@
+#createAndUpdate {
+  .formGroup {
+    margin-top: $padding1;
+    &.tar {
+      text-align: right;
+    }
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+
+  .buttonGroup {
+    &:after {
+      content: '';
+      clear: both;
+      display: table;
+    }
+
+    .button {
+      width: 50%;
+      float: left;
+      &:first-child {
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+      }
+      &:last-child {
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+      }
+    }
+  }
+  .button {
+    text-transform: uppercase;
+  }
+}

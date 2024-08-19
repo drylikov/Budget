@@ -1,0 +1,47 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  user-select: none;
+  touch-callout: none;
+  font-size: $fontSize;
+  font-family: $fontFamily;
+}
+
+body, input, textarea, button, select {
+  color: $gray7;
+  font-size: $fontSize;
+  font-family: $fontFamily;
+}
+
+a, button {
+  text-decoration: none !important;
+}
+
+a {
+  color: $gray7;
+}
+
+fieldset {
+  border: none;
+}
+
+html, body, #root {
+  height: 100%;
+}
+
+i {
+  margin: 0;
+}
+
+button {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  appearance: none;
+}

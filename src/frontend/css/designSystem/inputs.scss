@@ -1,0 +1,66 @@
+.inputWrapper {
+  position: relative;
+
+  .icon {
+    left: 16px;
+    z-index: -1;
+    color: $gray5;
+    font-size: 24px;
+    position: absolute;
+    top: ((46px - 24px) / 2) + 1px;
+  }
+
+  .input {
+    padding-left: 48px;
+    background-color: transparent;
+  }
+}
+
+.inputGroup {
+  position: relative;
+  &:after {
+    content: '';
+    clear: both;
+    display: table;
+  }
+
+  .leftLabel {
+    width: 60px;
+    height: 50px;
+    float: left;
+    line-height: 48px;
+    text-align: center;
+    border: 1px solid $gray3;
+    border-right: none;
+    border-radius: $borderRadius 0 0 $borderRadius;
+  }
+
+  .input {
+    float: left;
+    width: calc(100% - 60px);
+    border-radius: 0 $borderRadius $borderRadius 0;
+  }
+}
+
+.input {
+  width: 100%;
+  height: 50px;
+  color: $gray8;
+  outline: none;
+  display: block;
+  padding: 0 16px;
+  appearance: none;
+  border: 1px solid $gray3;
+  @include placeholder($gray5);
+  border-radius: $borderRadius;
+  &:focus {
+    border-color: $blue;
+  }
+  &:disabled {
+    background-color: $gray2;
+  }
+  &.is-invalid {
+    border-color: $red;
+    @include placeholder(lighten($red, 25%));
+  }
+}

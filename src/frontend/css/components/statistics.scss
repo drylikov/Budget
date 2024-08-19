@@ -1,0 +1,24 @@
+#statistics {
+  .statistic {
+    padding: $padding1;
+    margin-top: $padding1;
+    background-color: $gray2;
+    border-radius: $borderRadius;
+    &:first-child {
+      margin-top: 0;
+    }
+
+    .statisticTitle {
+      color: $gray7;
+      font-size: 15px;
+      line-height: 15px;
+      text-transform: uppercase;
+    }
+
+    .statisticPrice {
+      font-size: 30px;
+      margin-top: 10px;
+      line-height: 30px;
+    }
+  }
+}

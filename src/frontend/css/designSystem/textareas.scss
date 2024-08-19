@@ -1,0 +1,22 @@
+.textarea {
+  width: 100%;
+  color: $gray8;
+  outline: none;
+  display: block;
+  resize: vertical;
+  appearance: none;
+  padding: 13px 16px;
+  border: 1px solid $gray3;
+  @include placeholder($gray5);
+  border-radius: $borderRadius;
+  &:focus {
+    border-color: $blue;
+  }
+  &:disabled {
+    background-color: $gray2;
+  }
+  &.is-invalid {
+    border-color: $red;
+    @include placeholder(lighten($red, 25%));
+  }
+}
